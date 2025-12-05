@@ -280,6 +280,7 @@ body {
 .card-thumbnail {
   width: 100%;
   height: auto;
+  max-height: 180px;
   display: block;
   object-fit: cover;
   border-radius: var(--radius-md) var(--radius-md) 0 0;

@@ -159,8 +159,10 @@ body {
 }
 
 .hero-title span:not(:first-child) {
-  font-size: 0.85em;
-  margin-left: 1.2rem;
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--text-muted);
+  font-weight: 400;
 }
 
 .hero-title .name-large {

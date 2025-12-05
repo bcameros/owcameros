@@ -204,6 +204,8 @@ body {
   .hero-right img {
     height: auto;
     max-height: 380px;
+    object-fit: cover;
+    object-position: top center;
   }
 }
 

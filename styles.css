@@ -342,6 +342,15 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
+.resume-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.resume-content .meta {
+  margin-bottom: 0.6rem;
+}
+
 .subsection-heading {
   margin-top: 2.5rem;
 }

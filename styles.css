@@ -1,12 +1,9 @@
 :root {
-  --bg: #050816;
-  --bg-alt: #0f172a;
   --card-bg: #020617;
   --accent: #38bdf8;
   --accent-soft: rgba(56, 189, 248, 0.15);
   --text: #e5e7eb;
   --text-muted: #9ca3af;
-  --border: #1f2937;
   --radius-lg: 18px;
   --radius-md: 12px;
   --radius-pill: 999px;
@@ -70,14 +67,6 @@ body {
   padding: 0.9rem 0;
 }
 
-.logo a {
-  color: var(--text);
-  font-weight: 650;
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  font-size: 1.4rem;
-}
-
 .nav a {
   color: var(--text-muted);
   margin-left: 1rem;
@@ -93,37 +82,12 @@ body {
 
 /* Hero */
 
-.hero {
-  padding-top: 5rem;
-}
-
-.hero-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  gap: 3rem;
-  align-items: center;
-}
-
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.75rem;
   color: var(--accent);
   margin-bottom: 0.4rem;
-}
-
-.hero h1 {
-  font-size: clamp(2.1rem, 3vw, 2.6rem);
-  margin: 0 0 0.6rem;
-}
-
-.hero p {
-  margin-bottom: 1rem;
-}
-
-.hero-video {
-  max-width: 520px;
-  margin-inline: auto;
 }
 
 /* NEW SPLIT HERO STYLE */
@@ -170,12 +134,6 @@ body {
   border-top: 1px solid rgba(148, 163, 184, 0.2);
   padding-top: 0.8rem;
   margin-top: 1.5rem;
-}
-
-.hero-title .name-large {
-  font-size: clamp(3.5rem, 6vw, 5.5rem);
-  font-weight: 700;
-  margin-top: 0;
 }
 
 .subtitle {
@@ -309,11 +267,6 @@ body {
   padding: 0 1.2rem;
 }
 
-.card p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
 .card-link {
   display: inline-flex;
   margin: 0.6rem 1.2rem 1.1rem;
@@ -413,13 +366,8 @@ h3 {
 /* Responsive */
 
 @media (max-width: 900px) {
-  .hero-inner,
   .two-col {
     grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding-top: 4rem;
   }
 
   .nav {
@@ -434,10 +382,6 @@ h3 {
 @media (max-width: 600px) {
   .section {
     padding: 3rem 0;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
   }
 
   .video-frame {

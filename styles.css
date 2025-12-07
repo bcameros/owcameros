@@ -31,8 +31,10 @@ body {
 /* Layout helpers */
 
 .container {
-  width: min(1100px, 100% - 2.5rem);
+  width: min(1400px, 100%);
   margin: 0 auto;
+  padding-left: min(7vw, 4rem);
+  padding-right: min(7vw, 4rem);
 }
 
 .section {
@@ -416,6 +418,11 @@ h3 {
 @media (max-width: 900px) {
   .two-col {
     grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .nav {

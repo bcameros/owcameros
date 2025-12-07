@@ -122,12 +122,57 @@ body {
   margin-top: 2.5rem;
 }
 
-.hero-title span:first-child {
-  font-weight: 700;
+/* Split the name into inline elements */
+.hero-title .name-first,
+.hero-title .name-last {
+  display: inline-block;
   margin-top: 0;
+  margin-right: 0.3em; /* Small space between first and last name */
+  font-weight: 700;
 }
 
-.hero-title span:not(:first-child) {
+.hero-title .name-last {
+  margin-right: 0;
+}
+
+/* Initial state - hidden and positioned */
+.hero-title .name-first {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInLeft 0.8s ease-out 0.2s forwards;
+}
+
+.hero-title .name-last {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideInDown 0.8s ease-out 0.5s forwards;
+}
+
+/* Keyframe animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Exclude name spans from the general span rules */
+.hero-title span:not(.name-first):not(.name-last) {
   font-size: 0.85em;
   color: var(--text-muted);
   font-weight: 300;

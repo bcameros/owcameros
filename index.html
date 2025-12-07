@@ -182,6 +182,14 @@
   <script>
     // Simple current-year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Trigger name animation after page is fully loaded
+    window.addEventListener('load', function() {
+      const heroTitle = document.querySelector('.hero-title');
+      if (heroTitle) {
+        heroTitle.classList.add('animate');
+      }
+    });
   </script>
 </body>
 

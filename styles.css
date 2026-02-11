@@ -424,15 +424,47 @@ h3 {
 .resume-content {
   margin-left: 2.5rem;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .resume-content h4 {
   margin-top: 0;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 .resume-content .meta {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.resume-content .meta em {
+  color: var(--text);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.resume-education {
+  line-height: 1;
+}
+
+.resume-education h4 {
+  margin-bottom: 0.25rem;
+}
+
+.resume-education p {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.resume-education p + p {
+  margin-top: 0;
 }
 
 .subsection-heading {
@@ -442,13 +474,19 @@ h3 {
 /* Lists */
 
 .bullet-list {
-  padding-left: 1.2rem;
-  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1.25rem;
 }
 
 .bullet-list li {
-  margin-bottom: 0.25rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.resume-content h4 + .meta + .bullet-list {
+  margin-top: 0.25rem;
 }
 
 /* Meta text */

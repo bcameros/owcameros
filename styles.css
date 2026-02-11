@@ -108,6 +108,32 @@ body {
   max-width: 540px;
 }
 
+.hero-about {
+  margin-top: 1.5rem;
+}
+
+.hero-about p {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.hero-about p:last-of-type {
+  margin-bottom: 1.25rem;
+}
+
+.reel-section-card {
+  max-width: 400px;
+  margin: 0;
+}
+
+.reel-section-card .card-thumbnail {
+  margin: 1rem;
+  width: calc(100% - 2rem);
+  border-radius: var(--radius-md);
+}
+
 .hero-title {
   margin: 0.4rem 0 1.2rem;
   font-size: clamp(2.4rem, 4vw, 3.2rem);

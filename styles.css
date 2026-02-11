@@ -482,7 +482,15 @@ h3 {
   }
 
   .nav {
-    display: none; /* keep it simple for now */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .nav a {
+    margin-left: 0;
+    font-size: 0.85rem;
   }
 
   .header-inner {
